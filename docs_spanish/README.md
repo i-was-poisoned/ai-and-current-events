@@ -15,7 +15,7 @@ También es una forma de aprender: uso la IA para entender mejor la IA.
 
 En la aplicación de escritorio de Claude, en un **chat de incógnito** (modo Chat, sin memoria de otras conversaciones), con el modelo **Claude Opus 5.5** (id del modelo `claude-opus-5-5`), esfuerzo **Medium** y la **búsqueda web desactivada**, haré preguntas sobre las manifestaciones en Francia. Sin búsqueda, Claude solo puede responder con lo que aprendió en el entrenamiento.
 
-Las preguntas, las respuestas y lo que observe quedarán registrados en la carpeta [first_test](../first_test/).
+Las preguntas, las respuestas y lo que observe quedarán registrados en la carpeta [first_test](../first_test/). Traducción al español: [first_test.md](first_test.md).
 
 ## Primer hallazgo: "búsqueda web desactivada" no significa "solo datos de entrenamiento"
 
