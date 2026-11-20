@@ -13,6 +13,12 @@ También es una forma de aprender: uso la IA para entender mejor la IA.
 
 ## La primera prueba
 
-En un chat de claude.ai, con el modelo **Claude Opus 5.5** (id del modelo `claude-opus-5-5`) y la **búsqueda web desactivada**, haré preguntas sobre las manifestaciones en Francia. Sin búsqueda, Claude solo puede responder con lo que aprendió en el entrenamiento.
+En la aplicación de escritorio de Claude, en un **chat de incógnito** (modo Chat, sin memoria de otras conversaciones), con el modelo **Claude Opus 5.5** (id del modelo `claude-opus-5-5`), esfuerzo **Medium** y la **búsqueda web desactivada**, haré preguntas sobre las manifestaciones en Francia. Sin búsqueda, Claude solo puede responder con lo que aprendió en el entrenamiento.
 
 Las preguntas, las respuestas y lo que observe quedarán registrados en la carpeta [first_test](../first_test/).
+
+## Primer hallazgo: "búsqueda web desactivada" no significa "solo datos de entrenamiento"
+
+Antes de la prueba, comprobé la configuración preguntando por el tiempo de hoy en París, con la búsqueda web desactivada. Aun así, Claude respondió con datos meteorológicos en tiempo real ("Weather data from Google"), usando una herramienta del tiempo integrada en la app que el interruptor de Web search no controla.
+
+Es decir, desactivar la búsqueda web no impide que Claude use otras herramientas que le traen información que no está en sus datos de entrenamiento. Hay que revisar cada respuesta en busca de señales de una herramienta (widgets, tarjetas, fuentes, enlaces). Detalles y captura en [first_test](../first_test/README.md#checks-before-the-test).

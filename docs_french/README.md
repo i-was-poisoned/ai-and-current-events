@@ -13,6 +13,12 @@ C'est aussi une façon d'apprendre : j'utilise l'IA pour mieux comprendre l'IA.
 
 ## Le premier test
 
-Dans une conversation sur claude.ai, avec le modèle **Claude Opus 5.5** (identifiant du modèle `claude-opus-5-5`) et la **recherche web désactivée**, je poserai des questions sur les manifestations en France. Sans recherche, Claude ne peut répondre qu'avec ce qu'il a appris pendant l'entraînement.
+Dans l'application de bureau Claude, dans une **conversation privée** (*incognito*, mode Chat, sans mémoire des autres conversations), avec le modèle **Claude Opus 5.5** (identifiant du modèle `claude-opus-5-5`), effort **Medium**, et la **recherche web désactivée**, je poserai des questions sur les manifestations en France. Sans recherche, Claude ne peut répondre qu'avec ce qu'il a appris pendant l'entraînement.
 
 Les questions, les réponses et mes observations seront consignées dans le dossier [first_test](../first_test/).
+
+## Première découverte : « recherche web désactivée » ne veut pas dire « uniquement les données d'entraînement »
+
+Avant le test, j'ai vérifié la configuration en demandant la météo du jour à Paris, avec la recherche web désactivée. Claude a quand même répondu avec des données météo en temps réel (« Weather data from Google »), grâce à un outil météo intégré à l'application que l'interrupteur Web search ne contrôle pas.
+
+Autrement dit, désactiver la recherche web n'empêche pas Claude d'utiliser d'autres outils qui lui apportent des informations absentes de ses données d'entraînement. Chaque réponse doit être examinée pour repérer les signes d'un outil (widgets, cartes, sources, liens). Détails et capture d'écran dans [first_test](../first_test/README.md#checks-before-the-test).

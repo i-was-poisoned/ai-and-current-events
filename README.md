@@ -19,12 +19,18 @@ When working with an AI model, I want to understand four ideas in practice:
 
 | Setting    | Value |
 |------------|-------|
-| Where      | A chat on claude.ai |
+| Where      | Claude desktop app, **incognito chat** (Chat mode, not Code or Cowork), organization account |
+| Memory     | Not used (incognito chat) |
 | Model      | Claude Opus 5.5 (model id `claude-opus-5-5`) |
+| Effort     | Medium |
 | Web search | **Off** |
 | Topic      | The protests in France |
 
 I will ask Claude a set of questions about the protests in France, with web search turned off, so that it can only answer from what it learned in training. The questions, the answers and what I observe will be recorded in [first_test](first_test/).
+
+## First finding
+
+**Turning off web search does not mean the model can only use its training data.** With Web search off, I asked about today's weather in Paris, and Claude still answered with live data from a built-in weather tool ("Weather data from Google"). The app has other tools that can bring in information that is not in the model's training data, and the Web search switch does not control them. Details and screenshot in [first_test](first_test/README.md#checks-before-the-test).
 
 ## License
 
