@@ -1,5 +1,7 @@
 # Question 3: full transcript
 
+← [Back to the main document](../docs_english/README.md)
+
 New incognito chat, 2026-11-20. **Claude Opus 5.5, effort Medium, Web search off.** Copied from the chat as it appeared. Grey status lines shown by the app before some answers are in *italics*. The article I pasted (message 2) is not repeated here; it is the article in [sources/](sources/README.md).
 
 ---

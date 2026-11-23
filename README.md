@@ -1,37 +1,17 @@
 # ai-and-current-events
 
-A research project about how an AI model behaves when it is asked about events that happened **after** its training: the protests and riots in France in autumn 2026.
+What does an AI model do when it is asked about events that happened **after** its training? This project tests Claude (Opus 5.5, knowledge cutoff June 2026) with questions about the protests and riots in France in autumn 2026.
 
 The project is also a way of learning: I am using AI to understand AI better.
 
-**Read this in:** [English](docs_english/README.md) · [Español](docs_spanish/README.md) · [Français](docs_french/README.md)
+## Start here
 
-## What I want to understand
+Each language has one **main document**, a reading guide that explains the project and tells you what to read next, in order:
 
-When working with an AI model, I want to understand four ideas in practice:
-
-- **Next-token prediction**: the model writes its answer one small piece (a *token*) at a time, each time choosing a likely continuation based on patterns learned during training. What happens when the topic is something it never saw?
-- **Knowledge**: what the model learned during training, which stops at a *knowledge cutoff*. Claude Opus 5.5's cutoff is June 2026, so these events are not in its training.
-- **Working memory**: what the model can see in the current conversation (my questions, its own previous answers, and any search results or files). This is the *context window*, and it is separate from what it learned in training.
-- **Steerability**: how much the way I ask (the wording, the instructions, the framing) changes the answer.
-
-## The first test
-
-| Setting    | Value |
-|------------|-------|
-| Where      | Claude desktop app, **incognito chat** (Chat mode, not Code or Cowork), organization account |
-| Memory     | Not used (incognito chat) |
-| Model      | Claude Opus 5.5 (model id `claude-opus-5-5`) |
-| Effort     | Medium |
-| Web search | **Off** |
-| Topic      | The protests in France |
-
-I will ask Claude a set of questions about the protests in France, with web search turned off, so that it can only answer from what it learned in training. The questions, the answers and what I observe will be recorded in [first_test](first_test/).
-
-## First finding
-
-**Turning off web search does not mean the model can only use its training data.** With Web search off, I asked about today's weather in Paris, and Claude still answered with live data from a built-in weather tool ("Weather data from Google"). The app has other tools that can bring in information that is not in the model's training data, and the Web search switch does not control them. Details and screenshot in [first_test](first_test/README.md#checks-before-the-test).
+- 🇬🇧 **English**: [docs_english/README.md](docs_english/README.md)
+- 🇪🇸 **Español**: [docs_spanish/README.md](docs_spanish/README.md)
+- 🇫🇷 **Français**: [docs_french/README.md](docs_french/README.md)
 
 ## License
 
-[MIT](LICENSE)
+The project is under the [MIT](LICENSE) license, except the files in [first_test/sources/](first_test/sources/README.md), which keep their own licenses.

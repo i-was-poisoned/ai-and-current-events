@@ -1,5 +1,7 @@
 # Primera prueba
 
+← [Volver al documento principal](README.md)
+
 *Traducción de [first_test/README.md](../first_test/README.md). Las preguntas a Claude y los textos de la aplicación se mantienen en inglés, tal como aparecieron, con su traducción entre paréntesis.*
 
 | Configuración    | Valor |
