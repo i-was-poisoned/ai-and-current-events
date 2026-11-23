@@ -31,11 +31,29 @@ La primera prueba está entera en un solo documento, [first_test.md](first_test.
    → [first_test.md](first_test.md), sección *Pregunta 3*.
    - → Opcional: la conversación completa (en inglés), [first_test/q3-transcript.md](../first_test/q3-transcript.md).
    - → Opcional: el artículo que le di a Claude, [first_test/sources/](../first_test/sources/README.md).
-5. Vuelve aquí para leer el resumen de abajo.
+5. Vuelve aquí y sigue con la segunda prueba.
 
 Las capturas de pantalla que sirven de prueba están en [first_test/screenshots/](../first_test/screenshots/). El documento original, en inglés, es [first_test/README.md](../first_test/README.md).
 
-## 4. Lo que he descubierto hasta ahora
+## 4. Cómo leer la segunda prueba
+
+La segunda prueba repite la pregunta 3 (el artículo y las mismas preguntas) con otro modelo, **Claude Haiku 5.5**, y compara las respuestas con las de Opus 5.5.
+
+1. **Qué cambió y por qué**: la configuración y las diferencias con la primera prueba.
+   → [second_test.md](second_test.md), la tabla del principio y *En qué se diferencia de la primera prueba*.
+2. **La comparación, pregunta por pregunta**: fragmentos breves de los dos modelos.
+   → [second_test.md](second_test.md), sección *Comparación, pregunta por pregunta*.
+3. **Las observaciones**.
+   → [second_test.md](second_test.md), sección *Observaciones*.
+   - → Opcional: la conversación completa con Haiku (en inglés), [second_test/transcript.md](../second_test/transcript.md).
+4. Vuelve aquí para leer el resumen de abajo.
+
+El documento original, en inglés, es [second_test/README.md](../second_test/README.md).
+
+## 5. Lo que he descubierto hasta ahora
+
+### En la primera prueba (Opus 5.5)
+
 
 1. **Desactivar la búsqueda web no significa «solo datos de entrenamiento».** Con la búsqueda web desactivada, Claude respondió a una pregunta sobre el tiempo con datos en tiempo real de una herramienta meteorológica integrada. *(Comprobación 1)*
 2. **El modelo siempre sabe la fecha de hoy.** La aplicación se la da al principio de cada chat, en sus instrucciones ocultas (el *system prompt*), aunque su entrenamiento termine a mediados de 2026. *(Comprobación 3)*
@@ -45,8 +63,19 @@ Las capturas de pantalla que sirven de prueba están en [first_test/screenshots/
 6. **Con una fuente, se ciñe casi siempre a ella.** Para los hechos usó el artículo; para las preguntas generales usó su entrenamiento y lo dijo. Aun así, se colaron pequeños detalles de su entrenamiento sin avisar. *(Pregunta 3)*
 7. **No aceptó una pregunta tendenciosa.** Cuando le pregunté si había sido «un disturbio pacífico», dijo que no. *(Pregunta 3)*
 
-## 5. Próximos pasos
+### En la segunda prueba (Haiku 5.5 comparado con Opus 5.5)
 
-- Hacer las tres preguntas previstas en la pregunta 3 (el total de detenidos, qué pasó en noviembre y quién es el actual ministro o ministra de Educación).
+1. **Mismos hechos, distinto estilo.** Los dos modelos se ciñeron al artículo. Las respuestas de Haiku fueron más cortas desde el principio y usaron más listas, así que la brevedad se debe sobre todo al modelo.
+2. **Haiku se mantuvo dentro de la fuente de forma más estricta.** Ante una pregunta que iba más allá del artículo, Opus añadió conocimientos generales y lo dijo; Haiku calificó cualquier explicación de «especulación» y se detuvo.
+3. **Haiku fue muy prudente con su fecha de corte, a veces demasiado.** Aunque insistí tres veces, no quiso nombrar al actual ministro de Educación (Édouard Geffray), un nombre que quizá tenía en su entrenamiento.
+4. **Pequeñas incoherencias.** Haiku se contradijo sobre qué ministro nombra el artículo e interpretó la palabra «hijacked» de dos formas opuestas.
+5. **Patrones parecidos entre modelos.** En la pregunta del «disturbio pacífico», los dos dieron casi la misma frase.
+6. **Ser demasiado prudente también puede llevar a equivocarse, y dificulta la conversación.** Con la búsqueda web desactivada, hicieron falta ocho mensajes para que Haiku diera un nombre de su entrenamiento, y el que dio (un ministro de 2017 a 2022) estaba desfasado unos cuatro años.
+
+## 6. Próximos pasos
+
+- Hacer la pregunta prevista que falta: *How many people have been arrested in total?* («¿Cuántas personas han sido detenidas en total?»).
+- Buscar la fuente sobre Édouard Geffray y comprobar cuándo asumió el cargo (antes o después de junio de 2026).
+- Repetir la segunda prueba con **Opus 5.5** de la misma forma (texto pegado directamente, sin PDF), para una comparación más justa.
 - Repetir las preguntas a través de la **API**, donde no hay instrucciones ocultas ni fecha, y comparar.
-- Probar otros modelos y otros niveles de esfuerzo.
+- Probar otros niveles de esfuerzo.

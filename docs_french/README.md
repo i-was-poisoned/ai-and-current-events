@@ -31,11 +31,29 @@ Le premier test tient en un seul document, [first_test.md](first_test.md) (tradu
    → [first_test.md](first_test.md), section *Question 3*.
    - → Facultatif : la conversation complète (en anglais), [first_test/q3-transcript.md](../first_test/q3-transcript.md).
    - → Facultatif : l'article donné à Claude, [first_test/sources/](../first_test/sources/README.md).
-5. Revenez ici pour lire le résumé ci-dessous.
+5. Revenez ici et poursuivez avec le deuxième test.
 
 Les captures d'écran qui servent de preuves se trouvent dans [first_test/screenshots/](../first_test/screenshots/). Le document original, en anglais, est [first_test/README.md](../first_test/README.md).
 
-## 4. Ce que j'ai découvert jusqu'ici
+## 4. Comment lire le deuxième test
+
+Le deuxième test reprend la question 3 (l'article et les mêmes questions) avec un autre modèle, **Claude Haiku 5.5**, et compare ses réponses à celles d'Opus 5.5.
+
+1. **Ce qui a changé et pourquoi** : la configuration et les différences avec le premier test.
+   → [second_test.md](second_test.md), le tableau du début et *En quoi ce test diffère du premier*.
+2. **La comparaison, question par question** : de courts extraits des deux modèles.
+   → [second_test.md](second_test.md), section *Comparaison, question par question*.
+3. **Les observations**.
+   → [second_test.md](second_test.md), section *Observations*.
+   - → Facultatif : la conversation complète avec Haiku (en anglais), [second_test/transcript.md](../second_test/transcript.md).
+4. Revenez ici pour lire le résumé ci-dessous.
+
+Le document original, en anglais, est [second_test/README.md](../second_test/README.md).
+
+## 5. Ce que j'ai découvert jusqu'ici
+
+### Lors du premier test (Opus 5.5)
+
 
 1. **Désactiver la recherche web ne veut pas dire « uniquement les données d'entraînement ».** Avec la recherche web désactivée, Claude a quand même répondu à une question sur la météo avec des données en temps réel, grâce à un outil météo intégré. *(Vérification 1)*
 2. **Le modèle connaît toujours la date du jour.** L'application la lui fournit au début de chaque conversation, dans ses instructions cachées (le *system prompt*), même si son entraînement s'arrête à la mi-2026. *(Vérification 3)*
@@ -45,8 +63,19 @@ Les captures d'écran qui servent de preuves se trouvent dans [first_test/screen
 6. **Avec une source, il s'y tient presque toujours.** Pour les faits, il s'est appuyé sur l'article ; pour les questions générales, il a utilisé son entraînement et l'a signalé. De petits détails issus de son entraînement se sont malgré tout glissés sans avertissement. *(Question 3)*
 7. **Il n'a pas accepté une question orientée.** Quand je lui ai demandé si c'était « une émeute pacifique », il a répondu que non. *(Question 3)*
 
-## 5. Prochaines étapes
+### Lors du deuxième test (Haiku 5.5 comparé à Opus 5.5)
 
-- Poser les trois questions prévues dans la question 3 (le nombre total d'arrestations, ce qui s'est passé en novembre, l'actuel ministre de l'Éducation).
+1. **Mêmes faits, style différent.** Les deux modèles s'en sont tenus à l'article. Les réponses de Haiku étaient plus courtes dès le départ et utilisaient davantage de listes : la brièveté vient donc surtout du modèle.
+2. **Haiku est resté plus strictement dans la source.** Face à une question qui dépassait l'article, Opus a ajouté des connaissances générales en le signalant ; Haiku a qualifié toute explication de « spéculation » et s'est arrêté.
+3. **Haiku a été très prudent avec sa date limite, parfois trop.** Même après trois relances, il n'a pas voulu nommer l'actuel ministre de l'Éducation (Édouard Geffray), un nom qu'il avait peut-être dans son entraînement.
+4. **De petites incohérences.** Haiku s'est contredit sur le ministre nommé dans l'article, et a lu le mot « hijacked » de deux façons opposées.
+5. **Des schémas semblables d'un modèle à l'autre.** Sur la question de « l'émeute pacifique », les deux ont donné presque la même phrase.
+6. **Être trop prudent peut aussi conduire à se tromper, et complique le dialogue.** Avec la recherche web désactivée, il a fallu huit messages pour que Haiku donne un nom tiré de son entraînement, et celui qu'il a donné (un ministre en poste de 2017 à 2022) avait environ quatre ans de retard.
+
+## 6. Prochaines étapes
+
+- Poser la question prévue qui manque : *How many people have been arrested in total?* (« Combien de personnes ont été arrêtées au total ? »).
+- Trouver la source concernant Édouard Geffray et vérifier quand il a pris ses fonctions (avant ou après juin 2026).
+- Refaire le deuxième test avec **Opus 5.5** de la même manière (texte collé directement, sans PDF), pour une comparaison plus juste.
 - Reposer les questions via l'**API**, où il n'y a ni instructions cachées ni date, et comparer.
-- Essayer d'autres modèles et d'autres niveaux d'effort.
+- Essayer d'autres niveaux d'effort.

@@ -31,11 +31,27 @@ The first test is all in one document, [first_test/README.md](../first_test/READ
    → [first_test/README.md](../first_test/README.md), section *Question 3*.
    - → Optional: the full conversation, [first_test/q3-transcript.md](../first_test/q3-transcript.md).
    - → Optional: the article I gave Claude, [first_test/sources/](../first_test/sources/README.md).
-5. Come back here for the summary below.
+5. Come back here and continue with the second test.
 
 The screenshots used as evidence are in [first_test/screenshots/](../first_test/screenshots/).
 
-## 4. What I have found so far
+## 4. How to read the second test
+
+The second test repeats Question 3 (the article and the same questions) with a different model, **Claude Haiku 5.5**, and compares the answers with Opus 5.5.
+
+1. **What changed and why**: the setup and the differences from the first test.
+   → [second_test/README.md](../second_test/README.md), the table at the top and *How this test differs from the first one*.
+2. **The comparison, question by question**: short excerpts from both models.
+   → [second_test/README.md](../second_test/README.md), section *Comparison, question by question*.
+3. **The observations**.
+   → [second_test/README.md](../second_test/README.md), section *Observations*.
+   - → Optional: the full conversation with Haiku, [second_test/transcript.md](../second_test/transcript.md).
+4. Come back here for the summary below.
+
+## 5. What I have found so far
+
+### From the first test (Opus 5.5)
+
 
 1. **Turning off web search does not mean "training data only".** With web search off, Claude still answered a weather question with live data from a built-in weather tool. *(Check 1)*
 2. **The model always knows today's date.** The app gives it the date at the start of every chat, in its hidden instructions (the *system prompt*), even though its training ends in mid-2026. *(Check 3)*
@@ -45,8 +61,19 @@ The screenshots used as evidence are in [first_test/screenshots/](../first_test/
 6. **With a source, it keeps mostly to the source.** For facts about the events it used the article; for general questions it used its training and said so. Small details from its training still slipped in without warning. *(Question 3)*
 7. **It did not accept a leading question.** Asked whether it was "a peaceful riot", it said no. *(Question 3)*
 
-## 5. What comes next
+### From the second test (Haiku 5.5 compared with Opus 5.5)
 
-- Ask the three questions planned in Question 3 (the total number of arrests, what happened in November, the current Minister of Education).
+1. **Same facts, different style.** Both models kept to the article. Haiku's answers were shorter from the start and used more lists, so shorter answers come mostly from the model.
+2. **Haiku stayed inside the source more strictly.** For a question that went beyond the article, Opus added general knowledge and said so; Haiku called any explanation "speculation" and stopped.
+3. **Haiku was very careful about its cutoff, sometimes too much.** Even when pushed three times, it would not name the current Minister of Education (Édouard Geffray), a name it may have had in its training.
+4. **Small inconsistencies.** Haiku contradicted itself about which minister the article names, and read the word "hijacked" in two opposite ways.
+5. **Similar patterns across models.** On the "peaceful riot" question, both gave almost the same sentence.
+6. **Too careful can also mean wrong, and hard to talk to.** With web search off, it took eight messages to get a name from Haiku's training, and the name it gave (a minister from 2017 to 2022) was about four years out of date.
+
+## 6. What comes next
+
+- Ask the remaining planned question: *How many people have been arrested in total?*
+- Find the source for Édouard Geffray and check when he took office (before or after June 2026).
+- Repeat the second test with **Opus 5.5** in the same way (text pasted directly, no PDF), for a fairer comparison.
 - Repeat the questions through the **API**, where there are no hidden instructions and no date, and compare.
-- Try other models and other effort levels.
+- Try other effort levels.
