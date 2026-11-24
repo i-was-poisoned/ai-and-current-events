@@ -46,9 +46,21 @@ The second test repeats Question 3 (the article and the same questions) with a d
 3. **The observations**.
    → [second_test/README.md](../second_test/README.md), section *Observations*.
    - → Optional: the full conversation with Haiku, [second_test/transcript.md](../second_test/transcript.md).
+4. Come back here and continue with the third test.
+
+## 5. How to read the third test
+
+The third test asks why Haiku gave a minister's name about four years out of date in the second test. It starts with my hypothesis, then tests it with repeated questions to Haiku 5.5 and Opus 5.5, with no article.
+
+1. **My hypothesis and the method**.
+   → [third_test/README.md](../third_test/README.md), sections *My hypothesis (before the test)* and *Method*.
+2. **The results**: a table of the names given, then every answer word for word.
+   → [third_test/README.md](../third_test/README.md), section *Results*.
+3. **What I found and the limits of the test**.
+   → [third_test/README.md](../third_test/README.md), sections *What I found (after the test)* and *Limits of this test*.
 4. Come back here for the summary below.
 
-## 5. What I have found so far
+## 6. What I have found so far
 
 ### From the first test (Opus 5.5)
 
@@ -70,10 +82,19 @@ The second test repeats Question 3 (the article and the same questions) with a d
 5. **Similar patterns across models.** On the "peaceful riot" question, both gave almost the same sentence.
 6. **Too careful can also mean wrong, and hard to talk to.** With web search off, it took eight messages to get a name from Haiku's training, and the name it gave (a minister from 2017 to 2022) was about four years out of date.
 
-## 6. What comes next
+### From the third test (one question, repeated, Haiku 5.5 and Opus 5.5)
+
+1. **My hypothesis was wrong.** I expected the most frequent name (Blanquer) to win. In a clean chat, Haiku named the current minister, Édouard Geffray, in 7 out of 8 attempts, and never Blanquer.
+2. **One answer is only one sample.** The same question with the same settings gave Geffray 7 times and Borne once. You have to ask several times to see what a model tends to answer.
+3. **Knowing is not finding.** Haiku knew Geffray, but left him out when asked for a list of ministers in date order. The way I ask changes what comes out.
+4. **Some models are better than others.** Opus named Geffray every time, with his start date and government, and gave a complete list.
+5. **The conversation probably explains Blanquer.** In the second test, Haiku itself brought Blanquer into the conversation (the article does not mention him). What is already in the working memory can pull the answer towards it. This is a possible explanation, not a proof.
+
+## 7. What comes next
 
 - Ask the remaining planned question: *How many people have been arrested in total?*
-- Find the source for Édouard Geffray and check when he took office (before or after June 2026).
+- Add a source for the list of ministers and for Geffray's start date (October 2025, according to both models).
+- Test whether the conversation explains the Blanquer answer: ask the second test's minister questions in a chat where Blanquer has not been mentioned.
 - Repeat the second test with **Opus 5.5** in the same way (text pasted directly, no PDF), for a fairer comparison.
 - Repeat the questions through the **API**, where there are no hidden instructions and no date, and compare.
 - Try other effort levels.

@@ -46,11 +46,25 @@ La segunda prueba repite la pregunta 3 (el artículo y las mismas preguntas) con
 3. **Las observaciones**.
    → [second_test.md](second_test.md), sección *Observaciones*.
    - → Opcional: la conversación completa con Haiku (en inglés), [second_test/transcript.md](../second_test/transcript.md).
-4. Vuelve aquí para leer el resumen de abajo.
+4. Vuelve aquí y sigue con la tercera prueba.
 
 El documento original, en inglés, es [second_test/README.md](../second_test/README.md).
 
-## 5. Lo que he descubierto hasta ahora
+## 5. Cómo leer la tercera prueba
+
+La tercera prueba intenta averiguar por qué Haiku dio, en la segunda prueba, el nombre de un ministro con unos cuatro años de retraso. Empieza con mi hipótesis y la pone a prueba repitiendo preguntas a Haiku 5.5 y a Opus 5.5, sin artículo.
+
+1. **Mi hipótesis y el método**.
+   → [third_test.md](third_test.md), secciones *Mi hipótesis (antes de la prueba)* y *Método*.
+2. **Los resultados**: una tabla con los nombres que dieron y después cada respuesta palabra por palabra.
+   → [third_test.md](third_test.md), sección *Resultados*.
+3. **Lo que descubrí y los límites de la prueba**.
+   → [third_test.md](third_test.md), secciones *Lo que descubrí (después de la prueba)* y *Límites de esta prueba*.
+4. Vuelve aquí para leer el resumen de abajo.
+
+El documento original, en inglés, es [third_test/README.md](../third_test/README.md).
+
+## 6. Lo que he descubierto hasta ahora
 
 ### En la primera prueba (Opus 5.5)
 
@@ -72,10 +86,19 @@ El documento original, en inglés, es [second_test/README.md](../second_test/REA
 5. **Patrones parecidos entre modelos.** En la pregunta del «disturbio pacífico», los dos dieron casi la misma frase.
 6. **Ser demasiado prudente también puede llevar a equivocarse, y dificulta la conversación.** Con la búsqueda web desactivada, hicieron falta ocho mensajes para que Haiku diera un nombre de su entrenamiento, y el que dio (un ministro de 2017 a 2022) estaba desfasado unos cuatro años.
 
-## 6. Próximos pasos
+### En la tercera prueba (una pregunta repetida, Haiku 5.5 y Opus 5.5)
+
+1. **Mi hipótesis era errónea.** Esperaba que ganara el nombre más frecuente (Blanquer). En un chat limpio, Haiku nombró al ministro actual, Édouard Geffray, en 7 de 8 intentos, y nunca a Blanquer.
+2. **Una respuesta es solo una muestra.** La misma pregunta con la misma configuración dio 7 veces Geffray y una vez Borne. Hay que preguntar varias veces para ver qué tiende a responder un modelo.
+3. **Saber no es encontrar.** Haiku conocía a Geffray, pero lo dejó fuera cuando le pedí la lista de ministros por orden de fechas. La forma de preguntar cambia lo que sale.
+4. **Unos modelos son mejores que otros.** Opus nombró a Geffray todas las veces, con su fecha de nombramiento y su gobierno, y dio una lista completa.
+5. **Probablemente la conversación explica lo de Blanquer.** En la segunda prueba fue el propio Haiku quien metió a Blanquer en la conversación (el artículo no lo menciona). Lo que ya está en la memoria de trabajo puede arrastrar la respuesta hacia ello. Es una explicación posible, no una prueba.
+
+## 7. Próximos pasos
 
 - Hacer la pregunta prevista que falta: *How many people have been arrested in total?* («¿Cuántas personas han sido detenidas en total?»).
-- Buscar la fuente sobre Édouard Geffray y comprobar cuándo asumió el cargo (antes o después de junio de 2026).
+- Añadir una fuente para la lista de ministros y para la fecha de nombramiento de Geffray (octubre de 2025, según los dos modelos).
+- Comprobar si la conversación explica la respuesta de Blanquer: hacer las preguntas sobre el ministro de la segunda prueba en un chat donde no se haya mencionado a Blanquer.
 - Repetir la segunda prueba con **Opus 5.5** de la misma forma (texto pegado directamente, sin PDF), para una comparación más justa.
 - Repetir las preguntas a través de la **API**, donde no hay instrucciones ocultas ni fecha, y comparar.
 - Probar otros niveles de esfuerzo.

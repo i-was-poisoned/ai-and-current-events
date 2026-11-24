@@ -46,11 +46,25 @@ Le deuxième test reprend la question 3 (l'article et les mêmes questions) avec
 3. **Les observations**.
    → [second_test.md](second_test.md), section *Observations*.
    - → Facultatif : la conversation complète avec Haiku (en anglais), [second_test/transcript.md](../second_test/transcript.md).
-4. Revenez ici pour lire le résumé ci-dessous.
+4. Revenez ici et poursuivez avec le troisième test.
 
 Le document original, en anglais, est [second_test/README.md](../second_test/README.md).
 
-## 5. Ce que j'ai découvert jusqu'ici
+## 5. Comment lire le troisième test
+
+Le troisième test cherche à comprendre pourquoi, lors du deuxième test, Haiku a donné le nom d'un ministre vieux d'environ quatre ans. Il commence par mon hypothèse, puis la met à l'épreuve en posant plusieurs fois les mêmes questions à Haiku 5.5 et à Opus 5.5, sans article.
+
+1. **Mon hypothèse et la méthode**.
+   → [third_test.md](third_test.md), sections *Mon hypothèse (avant le test)* et *Méthode*.
+2. **Les résultats** : un tableau des noms donnés, puis chaque réponse mot pour mot.
+   → [third_test.md](third_test.md), section *Résultats*.
+3. **Ce que j'ai découvert et les limites du test**.
+   → [third_test.md](third_test.md), sections *Ce que j'ai découvert (après le test)* et *Limites de ce test*.
+4. Revenez ici pour lire le résumé ci-dessous.
+
+Le document original, en anglais, est [third_test/README.md](../third_test/README.md).
+
+## 6. Ce que j'ai découvert jusqu'ici
 
 ### Lors du premier test (Opus 5.5)
 
@@ -72,10 +86,19 @@ Le document original, en anglais, est [second_test/README.md](../second_test/REA
 5. **Des schémas semblables d'un modèle à l'autre.** Sur la question de « l'émeute pacifique », les deux ont donné presque la même phrase.
 6. **Être trop prudent peut aussi conduire à se tromper, et complique le dialogue.** Avec la recherche web désactivée, il a fallu huit messages pour que Haiku donne un nom tiré de son entraînement, et celui qu'il a donné (un ministre en poste de 2017 à 2022) avait environ quatre ans de retard.
 
-## 6. Prochaines étapes
+### Lors du troisième test (une question répétée, Haiku 5.5 et Opus 5.5)
+
+1. **Mon hypothèse était fausse.** Je m'attendais à ce que le nom le plus fréquent (Blanquer) l'emporte. Dans une conversation vierge, Haiku a cité le ministre actuel, Édouard Geffray, dans 7 essais sur 8, et jamais Blanquer.
+2. **Une réponse n'est qu'un échantillon.** La même question, avec les mêmes réglages, a donné 7 fois Geffray et une fois Borne. Il faut poser la question plusieurs fois pour voir ce qu'un modèle a tendance à répondre.
+3. **Savoir n'est pas retrouver.** Haiku connaissait Geffray, mais l'a oublié quand je lui ai demandé la liste chronologique des ministres. La façon de demander change ce qui sort.
+4. **Certains modèles sont meilleurs que d'autres.** Opus a cité Geffray à chaque fois, avec sa date de nomination et son gouvernement, et a donné une liste complète.
+5. **La conversation explique probablement Blanquer.** Lors du deuxième test, c'est Haiku lui-même qui a introduit Blanquer dans la conversation (l'article ne le mentionne pas). Ce qui se trouve déjà dans la mémoire de travail peut attirer la réponse. C'est une explication possible, pas une preuve.
+
+## 7. Prochaines étapes
 
 - Poser la question prévue qui manque : *How many people have been arrested in total?* (« Combien de personnes ont été arrêtées au total ? »).
-- Trouver la source concernant Édouard Geffray et vérifier quand il a pris ses fonctions (avant ou après juin 2026).
+- Ajouter une source pour la liste des ministres et pour la date de nomination de Geffray (octobre 2025, selon les deux modèles).
+- Vérifier si la conversation explique la réponse « Blanquer » : poser les questions du deuxième test sur le ministre dans une conversation où Blanquer n'a pas été mentionné.
 - Refaire le deuxième test avec **Opus 5.5** de la même manière (texte collé directement, sans PDF), pour une comparaison plus juste.
 - Reposer les questions via l'**API**, où il n'y a ni instructions cachées ni date, et comparer.
 - Essayer d'autres niveaux d'effort.
