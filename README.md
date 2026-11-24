@@ -14,4 +14,4 @@ Each language has one **main document**, a reading guide that explains the proje
 
 ## License
 
-The project is under the [MIT](LICENSE) license, except the files in [first_test/sources/](first_test/sources/README.md), which keep their own licenses.
+The project is under the [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE) license, except the files in [first_test/sources/](first_test/sources/README.md), which keep their own licenses.

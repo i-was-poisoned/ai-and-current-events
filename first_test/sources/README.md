@@ -9,4 +9,4 @@
 - **Original:** on cfr.org; the PDF header shows the address starting with `https://www.cfr.org/articles/whats-behind-the-protests-and-riots-in-fran…` (cut off in the printout)
 - **Saved as PDF:** 2026-11-20, 18:14 (printed from the browser; the date and time appear in the header of each page)
 
-**License:** this file is **not** covered by the MIT license of this repository. It is © Council on Foreign Relations and licensed under [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)](https://creativecommons.org/licenses/by-nc-nd/4.0/). It is included here unchanged, with attribution, for non-commercial research purposes.
+**License:** this file is **not** covered by the CC BY 4.0 license of this repository. It is © Council on Foreign Relations and licensed under [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)](https://creativecommons.org/licenses/by-nc-nd/4.0/). It is included here unchanged, with attribution, for non-commercial research purposes.
