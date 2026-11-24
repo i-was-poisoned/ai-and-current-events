@@ -13,7 +13,7 @@ It is also a way of learning: I am using AI to understand AI better.
 ## 2. The four ideas I want to understand
 
 - **Next-token prediction**: the model writes its answer one small piece (a *token*) at a time, each time choosing a likely continuation based on patterns learned during training. What happens when the topic is something it never saw?
-- **Knowledge**: what the model learned during training, which stops at a *knowledge cutoff*. Claude Opus 5.5's cutoff is June 2026, so these events are not in its training.
+- **Knowledge**: what the model learned during training, which stops at a *knowledge cutoff*. Claude Opus 5.5's cutoff is June 2026, and Claude Haiku 5.5 also says its knowledge ends in June 2026, so these events are not in their training.
 - **Working memory**: what the model can see in the current conversation (my questions, its own previous answers, and any search results or files). This is the *context window*, and it is separate from what it learned in training.
 - **Steerability**: how much the way I ask (the wording, the instructions, the framing) changes the answer.
 
@@ -92,9 +92,12 @@ The third test asks why Haiku gave a minister's name about four years out of dat
 
 ## 7. What comes next
 
-- Ask the remaining planned question: *How many people have been arrested in total?*
-- Add a source for the list of ministers and for Geffray's start date (October 2025, according to both models).
-- Test whether the conversation explains the Blanquer answer: ask the second test's minister questions in a chat where Blanquer has not been mentioned.
-- Repeat the second test with **Opus 5.5** in the same way (text pasted directly, no PDF), for a fairer comparison.
-- Repeat the questions through the **API**, where there are no hidden instructions and no date, and compare.
-- Try other effort levels.
+- **The fourth test:** questions about the same events with web search **on**, with Haiku 5.5 and Opus 5.5.
+
+### Open questions
+
+Ideas that are not planned in this project, for anyone who wants to continue:
+
+- Does the conversation explain the Blanquer answer of the second test? Ask the same minister questions in a chat where Blanquer has not been mentioned.
+- What changes through the **API**, where there are no hidden instructions and no date?
+- What changes with other effort levels?

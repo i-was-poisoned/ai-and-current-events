@@ -13,7 +13,7 @@ También es una forma de aprender: uso la IA para entender mejor la IA.
 ## 2. Las cuatro ideas que quiero entender
 
 - **Predicción del siguiente token** (*next-token prediction*): el modelo escribe su respuesta pieza a pieza (cada pieza es un *token*), eligiendo cada vez una continuación probable según los patrones que aprendió durante el entrenamiento. ¿Qué ocurre cuando el tema es algo que nunca vio?
-- **Conocimiento** (*knowledge*): lo que el modelo aprendió durante el entrenamiento, que termina en una *fecha de corte* (*knowledge cutoff*). La de Claude Opus 5.5 es junio de 2026, así que estos acontecimientos no están en su entrenamiento.
+- **Conocimiento** (*knowledge*): lo que el modelo aprendió durante el entrenamiento, que termina en una *fecha de corte* (*knowledge cutoff*). La de Claude Opus 5.5 es junio de 2026, y Claude Haiku 5.5 también dice que su conocimiento termina en junio de 2026, así que estos acontecimientos no están en su entrenamiento.
 - **Memoria de trabajo** (*working memory*): lo que el modelo puede ver en la conversación actual (mis preguntas, sus respuestas anteriores y los resultados de búsqueda o archivos que haya). Es la *ventana de contexto*, y es distinta de lo que aprendió en el entrenamiento.
 - **Capacidad de dirección** (*steerability*): cuánto cambia la respuesta según cómo pregunto (las palabras, las instrucciones, el enfoque).
 
@@ -96,9 +96,12 @@ El documento original, en inglés, es [third_test/README.md](../third_test/READM
 
 ## 7. Próximos pasos
 
-- Hacer la pregunta prevista que falta: *How many people have been arrested in total?* («¿Cuántas personas han sido detenidas en total?»).
-- Añadir una fuente para la lista de ministros y para la fecha de nombramiento de Geffray (octubre de 2025, según los dos modelos).
-- Comprobar si la conversación explica la respuesta de Blanquer: hacer las preguntas sobre el ministro de la segunda prueba en un chat donde no se haya mencionado a Blanquer.
-- Repetir la segunda prueba con **Opus 5.5** de la misma forma (texto pegado directamente, sin PDF), para una comparación más justa.
-- Repetir las preguntas a través de la **API**, donde no hay instrucciones ocultas ni fecha, y comparar.
-- Probar otros niveles de esfuerzo.
+- **La cuarta prueba:** preguntas sobre los mismos acontecimientos con la búsqueda web **activada**, con Haiku 5.5 y Opus 5.5.
+
+### Preguntas abiertas
+
+Ideas que no están previstas en este proyecto, para quien quiera continuar:
+
+- ¿La conversación explica la respuesta de Blanquer de la segunda prueba? Hacer las mismas preguntas sobre el ministro en un chat donde no se haya mencionado a Blanquer.
+- ¿Qué cambia a través de la **API**, donde no hay instrucciones ocultas ni fecha?
+- ¿Qué cambia con otros niveles de esfuerzo?

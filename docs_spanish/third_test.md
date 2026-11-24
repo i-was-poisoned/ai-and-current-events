@@ -123,8 +123,3 @@ Debajo de la respuesta, la aplicación mostró el aviso «Web search is off» co
 - Pocos intentos: 8 con Haiku y 4 con Opus, y solo **una** lista por modelo. Los números muestran una tendencia, no probabilidades exactas.
 - En el intento 4 de Haiku, mi pregunta no tenía punto final: una diferencia mínima.
 - Las fechas y los gobiernos que dan los modelos salen de su entrenamiento. Comprobé con una búsqueda web que Geffray es el ministro actual, pero su fecha de nombramiento (octubre de 2025) y la lista de ministros aún necesitan una fuente.
-
-## Pendiente
-
-- Añadir una fuente para la lista de ministros y para la fecha de nombramiento de Geffray.
-- Poner a prueba la explicación 5: repetir las preguntas sobre el ministro de la segunda prueba en un chat donde **no** se haya mencionado a Blanquer, y ver si cambia la respuesta.

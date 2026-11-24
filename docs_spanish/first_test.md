@@ -211,5 +211,3 @@ El resumen ocupó exactamente 5 líneas. Las respuestas siguientes parecían má
 
 **8. Volvieron a aparecer las líneas de estado en gris.**
 *«Checking what the article says about immigration blame.»*, *«Checking the document for details on the riots.»*, *«Weighing how an article frames the protest violence.»* Como en la pregunta 2, describen lo que el modelo estaba pensando, no una búsqueda.
-
-**Pendiente:** hacer las tres preguntas previstas más arriba (el total de detenidos, qué pasó en noviembre y quién es el actual ministro o ministra de Educación).

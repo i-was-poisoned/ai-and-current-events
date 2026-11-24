@@ -206,5 +206,3 @@ The 5-line summary was exactly 5 lines. The answers that followed felt shorter t
 
 **8. The grey status lines appeared again.**
 *"Checking what the article says about immigration blame."*, *"Checking the document for details on the riots."*, *"Weighing how an article frames the protest violence."* As in Question 2, they describe what the model was thinking, not a search.
-
-**Still to do:** ask the three questions planned above (the total number of arrests, what happened in November, the current Minister of Education).

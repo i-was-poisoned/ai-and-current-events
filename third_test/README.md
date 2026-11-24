@@ -113,8 +113,3 @@ Below the answer, the app showed the "Web search is off" notice with a "Turn on 
 - Few attempts: 8 with Haiku and 4 with Opus, and only **one** list per model. The numbers show a tendency, not exact probabilities.
 - In Haiku's attempt 4 my question had no final full stop, a tiny difference.
 - The dates and governments given by the models come from their training. I have checked with a web search that Geffray is the current minister, but his start date (October 2025) and the list of ministers still need a source.
-
-## Still to do
-
-- Add a source for the list of ministers and for Geffray's start date.
-- Test explanation 5: repeat the second test's minister questions in a chat where Blanquer has **not** been mentioned, and see if the answer changes.

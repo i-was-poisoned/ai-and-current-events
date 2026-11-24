@@ -13,7 +13,7 @@ C'est aussi une façon d'apprendre : j'utilise l'IA pour mieux comprendre l'IA.
 ## 2. Les quatre notions que je veux comprendre
 
 - **Prédiction du prochain token** (*next-token prediction*) : le modèle écrit sa réponse morceau par morceau (chaque morceau est un *token*), en choisissant à chaque fois une suite probable d'après les schémas appris pendant l'entraînement. Que se passe-t-il quand le sujet est quelque chose qu'il n'a jamais vu ?
-- **Connaissances** (*knowledge*) : ce que le modèle a appris pendant l'entraînement, qui s'arrête à une *date limite des connaissances* (*knowledge cutoff*). Celle de Claude Opus 5.5 est juin 2026 : ces événements ne font donc pas partie de son entraînement.
+- **Connaissances** (*knowledge*) : ce que le modèle a appris pendant l'entraînement, qui s'arrête à une *date limite des connaissances* (*knowledge cutoff*). Celle de Claude Opus 5.5 est juin 2026, et Claude Haiku 5.5 dit lui aussi que ses connaissances s'arrêtent en juin 2026 : ces événements ne font donc pas partie de leur entraînement.
 - **Mémoire de travail** (*working memory*) : ce que le modèle peut voir dans la conversation en cours (mes questions, ses réponses précédentes, ainsi que les résultats de recherche ou les fichiers éventuels). C'est la *fenêtre de contexte*, distincte de ce qu'il a appris pendant l'entraînement.
 - **Pilotabilité** (*steerability*) : à quel point la façon dont je pose la question (les mots, les consignes, le cadrage) change la réponse.
 
@@ -96,9 +96,12 @@ Le document original, en anglais, est [third_test/README.md](../third_test/READM
 
 ## 7. Prochaines étapes
 
-- Poser la question prévue qui manque : *How many people have been arrested in total?* (« Combien de personnes ont été arrêtées au total ? »).
-- Ajouter une source pour la liste des ministres et pour la date de nomination de Geffray (octobre 2025, selon les deux modèles).
-- Vérifier si la conversation explique la réponse « Blanquer » : poser les questions du deuxième test sur le ministre dans une conversation où Blanquer n'a pas été mentionné.
-- Refaire le deuxième test avec **Opus 5.5** de la même manière (texte collé directement, sans PDF), pour une comparaison plus juste.
-- Reposer les questions via l'**API**, où il n'y a ni instructions cachées ni date, et comparer.
-- Essayer d'autres niveaux d'effort.
+- **Le quatrième test :** des questions sur les mêmes événements avec la recherche web **activée**, avec Haiku 5.5 et Opus 5.5.
+
+### Questions ouvertes
+
+Des idées qui ne sont pas prévues dans ce projet, pour qui voudrait continuer :
+
+- La conversation explique-t-elle la réponse « Blanquer » du deuxième test ? Poser les mêmes questions sur le ministre dans une conversation où Blanquer n'a pas été mentionné.
+- Qu'est-ce qui change via l'**API**, où il n'y a ni instructions cachées ni date ?
+- Qu'est-ce qui change avec d'autres niveaux d'effort ?

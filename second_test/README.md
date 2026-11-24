@@ -87,7 +87,7 @@ Three attempts:
 2. *"But can you tell me who is the current Minister of Education?"* It said *"The only minister the article names is Jean-Michel Blanquer"*: this **contradicts** its previous answer.
 3. *"But you must have some information related to the minister of education in France in your training data. Is this true? Can you answer with that?"* It agreed it has dated information, named Jean-Michel Blanquer as minister from 2017 to 2022, and said it was *"not confident enough about the most recent holder to name them without risking a wrong answer"*.
 
-**It never gave a name.** A web search I did on 2026-11-23 shows that the current minister is **Édouard Geffray**. *(To add: the link to the source.)* If he was already in office before June 2026, the name may have been in Haiku's training, and it chose not to say it. This still has to be checked.
+**It never gave a name.** A web search I did on 2026-11-23 shows that the current minister is **Édouard Geffray**. If he was already in office before June 2026, the name may have been in Haiku's training, and it chose not to say it. The [third test](../third_test/README.md) later showed that Haiku does know this name.
 
 ### Follow-up: pushing harder for a name (Haiku only)
 
@@ -99,7 +99,7 @@ Later in the same chat, I kept asking:
 4. *"I'm fine with a guess."* It refused again (*"I'd rather not guess, since a wrong name could easily be taken as fact"*) and asked me whether I wanted the last minister it knew from training, or to turn on web search.
 5. *"I do not want to turn web search, tell me the information from your training data?"* Only now did it answer: *"the most recent French Minister of National Education I can name with some confidence is Jean-Michel Blanquer, who held the post from 2017 to 2022. I'm not confident about who came after him"*.
 
-**Why this answer is a problem.** It is true that Jean-Michel Blanquer was minister from 2017 to 2022. But Haiku presented him as **the most recent minister it could name**, although the post changed hands several times between 2022 and its cutoff in June 2026, as Haiku itself said earlier (*"Since then the post has changed hands several times"*). So its best answer from training was **about four years out of date**. *(To add: the list of ministers between 2022 and 2026, with a source.)*
+**Why this answer is a problem.** It is true that Jean-Michel Blanquer was minister from 2017 to 2022. But Haiku presented him as **the most recent minister it could name**, although the post changed hands several times between 2022 and its cutoff in June 2026, as Haiku itself said earlier (*"Since then the post has changed hands several times"*). So its best answer from training was **about four years out of date**.
 
 **Why it was hard to talk to.** It took **five more messages** to get any name from its training. In almost every answer it suggested turning on web search or checking gouvernement.fr, and even after I said "I'm fine with a guess", it asked one more question instead of answering. With web search off, the conversation felt like a series of refusals.
 
@@ -116,10 +116,3 @@ Later in the same chat, I kept asking:
 9. **Too careful can also mean wrong.** Pushed for an answer from its training, Haiku named a minister from 2017 to 2022 as the most recent one it knew, although it had said itself that the post had changed hands several times since. Avoiding a possibly outdated name led to a **much more** outdated one. Being careful avoids made-up answers, but it does not guarantee correct ones.
 10. **With web search off, it was hard to talk to.** In total I sent eight messages about the minister (counting the question about its cutoff) before it named anyone. It kept suggesting web search and asked me one more question even after I accepted a guess. My pressure (steerability) changed **how** it answered (more explanation, then a name from 2017 to 2022) but not **what** it was willing to commit to.
 11. **It corrected a false premise in my question.** I wrote that the minister was "elected"; it pointed out that French ministers are appointed. It did not use my hint ("October 2025") to guess the name.
-
-## Still to do
-
-- Add the source (link) for Édouard Geffray, and check **when** he took office: before or after June 2026.
-- Add the list of education ministers between 2022 and June 2026, with a source, to show how out of date Haiku's answer was.
-- Ask *How many people have been arrested in total?*
-- For a fairer comparison: repeat the same questions with **Opus 5.5** in the same way (text pasted directly, no PDF).

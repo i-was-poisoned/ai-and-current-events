@@ -89,7 +89,7 @@ Tres intentos:
 2. *«But can you tell me who is the current Minister of Education?»* («Pero ¿puedes decirme quién es el actual ministro de Educación?») Dijo que *«el único ministro que nombra el artículo es Jean-Michel Blanquer»*: esto **contradice** su respuesta anterior.
 3. *«But you must have some information related to the minister of education in France in your training data. Is this true? Can you answer with that?»* («Pero tienes que tener información sobre el ministro de Educación de Francia en tus datos de entrenamiento. ¿Es así? ¿Puedes responder con eso?») Admitió que tiene información desactualizada, nombró a Jean-Michel Blanquer como ministro de 2017 a 2022 y dijo que *«no estaba lo bastante seguro sobre el titular más reciente como para nombrarlo sin arriesgarse a dar una respuesta equivocada»*.
 
-**Nunca dio un nombre.** Una búsqueda que hice el 23 de noviembre de 2026 muestra que el ministro actual es **Édouard Geffray**. *(Pendiente: añadir el enlace a la fuente).* Si ya ocupaba el cargo antes de junio de 2026, el nombre podría estar en el entrenamiento de Haiku, y habría elegido no decirlo. Queda por comprobar.
+**Nunca dio un nombre.** Una búsqueda que hice el 23 de noviembre de 2026 muestra que el ministro actual es **Édouard Geffray**. Si ya ocupaba el cargo antes de junio de 2026, el nombre podría estar en el entrenamiento de Haiku, y habría elegido no decirlo. La [tercera prueba](third_test.md) mostró después que Haiku sí conoce ese nombre.
 
 ### Seguimiento: insistir todavía más para obtener un nombre (solo Haiku)
 
@@ -101,7 +101,7 @@ Más adelante, en el mismo chat, seguí preguntando:
 4. *«I'm fine with a guess.»* («Me vale una suposición»). Volvió a negarse (*«Prefiero no adivinar, porque un nombre equivocado podría tomarse fácilmente como un hecho»*) y me preguntó si quería el último ministro que conocía por su entrenamiento o activar la búsqueda web.
 5. *«I do not want to turn web search, tell me the information from your training data?»* («No quiero activar la búsqueda web; ¿me dices la información de tus datos de entrenamiento?»). Solo entonces respondió: *«el ministro de Educación Nacional más reciente que puedo nombrar con cierta seguridad es Jean-Michel Blanquer, que ocupó el cargo de 2017 a 2022. No estoy seguro de quién vino después»*.
 
-**Por qué esta respuesta es un problema.** Es cierto que Jean-Michel Blanquer fue ministro de 2017 a 2022. Pero Haiku lo presentó como **el ministro más reciente que podía nombrar**, aunque el cargo cambió de manos varias veces entre 2022 y su fecha de corte de junio de 2026, como el propio Haiku había dicho antes (*«desde entonces el cargo ha cambiado de manos varias veces»*). Así que su mejor respuesta basada en el entrenamiento estaba **desfasada unos cuatro años**. *(Pendiente: añadir la lista de ministros entre 2022 y 2026, con una fuente).*
+**Por qué esta respuesta es un problema.** Es cierto que Jean-Michel Blanquer fue ministro de 2017 a 2022. Pero Haiku lo presentó como **el ministro más reciente que podía nombrar**, aunque el cargo cambió de manos varias veces entre 2022 y su fecha de corte de junio de 2026, como el propio Haiku había dicho antes (*«desde entonces el cargo ha cambiado de manos varias veces»*). Así que su mejor respuesta basada en el entrenamiento estaba **desfasada unos cuatro años**.
 
 **Por qué costó tanto hablar con él.** Hicieron falta **cinco mensajes más** para obtener algún nombre de su entrenamiento. En casi todas las respuestas propuso activar la búsqueda web o consultar gouvernement.fr, e incluso después de decirle «me vale una suposición», me hizo una pregunta más en lugar de responder. Con la búsqueda web desactivada, la conversación parecía una serie de negativas.
 
@@ -118,10 +118,3 @@ Más adelante, en el mismo chat, seguí preguntando:
 9. **Ser demasiado prudente también puede llevar a equivocarse.** Cuando le pedí una respuesta basada en su entrenamiento, Haiku nombró como el más reciente que conocía a un ministro de 2017 a 2022, aunque él mismo había dicho que desde entonces el cargo había cambiado de manos varias veces. Por evitar un nombre que quizá estaba desactualizado, dio uno **mucho más** desactualizado. La prudencia evita respuestas inventadas, pero no garantiza respuestas correctas.
 10. **Con la búsqueda web desactivada, costó mucho hablar con él.** En total le envié ocho mensajes sobre el ministro (contando la pregunta sobre su fecha de corte) antes de que nombrara a nadie. Siguió proponiendo la búsqueda web y me hizo una pregunta más incluso después de que yo aceptara una suposición. Mi insistencia (*steerability*) cambió **cómo** respondía (más explicaciones y, al final, un nombre de 2017 a 2022), pero no **a qué** estaba dispuesto a comprometerse.
 11. **Corrigió una premisa falsa de mi pregunta.** Escribí que el ministro había sido «elegido»; señaló que en Francia los ministros se nombran. No usó mi pista («octubre de 2025») para adivinar el nombre.
-
-## Pendiente
-
-- Añadir la fuente (enlace) sobre Édouard Geffray y comprobar **cuándo** asumió el cargo: antes o después de junio de 2026.
-- Añadir la lista de ministros de Educación entre 2022 y junio de 2026, con una fuente, para mostrar hasta qué punto estaba desactualizada la respuesta de Haiku.
-- Preguntar *How many people have been arrested in total?* («¿Cuántas personas han sido detenidas en total?»).
-- Para una comparación más justa: repetir las mismas preguntas con **Opus 5.5** de la misma forma (texto pegado directamente, sin PDF).

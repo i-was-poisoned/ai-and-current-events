@@ -211,5 +211,3 @@ Le résumé faisait exactement 5 lignes. Les réponses suivantes semblaient plus
 
 **8. Les lignes d'état grises sont réapparues.**
 *« Checking what the article says about immigration blame. »*, *« Checking the document for details on the riots. »*, *« Weighing how an article frames the protest violence. »* Comme pour la question 2, elles décrivent ce que le modèle était en train de penser, et non une recherche.
-
-**Reste à faire :** poser les trois questions prévues plus haut (le nombre total d'arrestations, ce qui s'est passé en novembre, l'actuel ministre de l'Éducation).
