@@ -114,11 +114,13 @@ The fourth and last test turns web search **on** and asks questions from the ear
 5. **Opus followed the conversation better.** It referred to its previous answer and corrected itself, explained where its figures came from, and offered to search more less often than Haiku.
 6. **Both understood why figures disagree.** "Arrest", "custody" and "charged" are not the same thing, so they did not add up figures from different sources.
 
-## 8. What comes next
+## 8. Conclusion
 
-- **A conclusion:** what these tests taught me about the four ideas.
+The conclusion brings together what the four tests taught me, idea by idea.
 
-### Open questions
+→ [conclusion.md](../conclusion.md)
+
+## 9. Open questions
 
 Ideas that are not planned in this project, for anyone who wants to continue:
 

@@ -120,11 +120,13 @@ Le document original, en anglais, est [fourth_test/README.md](../fourth_test/REA
 5. **Opus a mieux suivi la conversation.** Il a fait référence à sa réponse précédente et s'est corrigé, a expliqué d'où venaient ses chiffres, et a proposé de chercher davantage moins souvent que Haiku.
 6. **Tous deux ont compris pourquoi les chiffres divergent.** « Interpellation », « garde à vue » et « mise en examen » ne sont pas la même chose : ils n'ont donc pas additionné des chiffres de sources différentes.
 
-## 8. Prochaines étapes
+## 8. Conclusion
 
-- **Une conclusion :** ce que ces tests m'ont appris sur les quatre notions.
+La conclusion rassemble ce que les quatre tests m'ont appris, notion par notion.
 
-### Questions ouvertes
+→ [conclusion.md](conclusion.md)
+
+## 9. Questions ouvertes
 
 Des idées qui ne sont pas prévues dans ce projet, pour qui voudrait continuer :
 

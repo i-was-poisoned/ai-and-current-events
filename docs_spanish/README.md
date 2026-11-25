@@ -120,11 +120,13 @@ El documento original, en inglés, es [fourth_test/README.md](../fourth_test/REA
 5. **Opus siguió mejor la conversación.** Se refirió a su respuesta anterior y se corrigió, explicó de dónde venían sus cifras y ofreció buscar más con menos frecuencia que Haiku.
 6. **Los dos entendieron por qué las cifras no coinciden.** «Detención», «custodia» y «acusación» no son lo mismo, así que no sumaron cifras de fuentes distintas.
 
-## 8. Próximos pasos
+## 8. Conclusión
 
-- **Una conclusión:** lo que estas pruebas me enseñaron sobre las cuatro ideas.
+La conclusión reúne lo que me enseñaron las cuatro pruebas, idea por idea.
 
-### Preguntas abiertas
+→ [conclusion.md](conclusion.md)
+
+## 9. Preguntas abiertas
 
 Ideas que no están previstas en este proyecto, para quien quiera continuar:
 
