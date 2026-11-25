@@ -66,16 +66,18 @@ Le document original, en anglais, est [third_test/README.md](../third_test/READM
 
 ## 6. Comment lire le quatrième test
 
-Le quatrième et dernier test **active** la recherche web et repose des questions des tests précédents, pour voir ce qui change quand Claude peut trouver lui-même des informations actuelles.
+Le quatrième et dernier test **active** la recherche web et repose des questions des tests précédents, d'abord à Haiku 5.5 puis à Opus 5.5, pour voir ce qui change quand Claude peut trouver lui-même des informations actuelles.
 
-1. **Mon hypothèse et la vérification que la recherche web fonctionne**.
-   → [fourth_test.md](fourth_test.md), sections *Mon hypothèse (avant le test)* et *Vérification : la recherche web fonctionne*.
-2. **Les questions** : de courts extraits, chacun comparé à la réponse obtenue avec la recherche désactivée.
-   → [fourth_test.md](fourth_test.md), section *Questions et réponses*.
-   - → Facultatif : la conversation complète (en anglais), [fourth_test/transcript.md](../fourth_test/transcript.md).
-3. **Les observations et les points à garder à l'esprit**.
-   → [fourth_test.md](fourth_test.md), sections *Observations* et *Points importants à garder à l'esprit*.
-4. Revenez ici pour lire le résumé ci-dessous.
+1. **Mon hypothèse**.
+   → [fourth_test.md](fourth_test.md), section *Mon hypothèse (avant le test)*.
+2. **Partie 1, Haiku 5.5** : la vérification que la recherche web fonctionne, les cinq questions (chacune comparée à la réponse obtenue avec la recherche désactivée) et les observations.
+   → [fourth_test.md](fourth_test.md), section *Partie 1 : Haiku 5.5*.
+3. **Partie 2, Opus 5.5** : les mêmes questions, chacune comparée à la réponse de Haiku, et les observations.
+   → [fourth_test.md](fourth_test.md), section *Partie 2 : Opus 5.5*.
+   - → Facultatif : les deux conversations complètes (en anglais), [fourth_test/transcript.md](../fourth_test/transcript.md).
+4. **Mon hypothèse était-elle juste ?** Et les points à garder à l'esprit.
+   → [fourth_test.md](fourth_test.md), sections *Mon hypothèse était-elle juste ?* et *Points importants à garder à l'esprit*.
+5. Revenez ici pour lire le résumé ci-dessous.
 
 Le document original, en anglais, est [fourth_test/README.md](../fourth_test/README.md).
 
@@ -109,17 +111,17 @@ Le document original, en anglais, est [fourth_test/README.md](../fourth_test/REA
 4. **Certains modèles sont meilleurs que d'autres.** Opus a cité Geffray à chaque fois, avec sa date de nomination et son gouvernement, et a donné une liste complète.
 5. **La conversation explique probablement Blanquer.** Lors du deuxième test, c'est Haiku lui-même qui a introduit Blanquer dans la conversation (l'article ne le mentionne pas). Ce qui se trouve déjà dans la mémoire de travail peut attirer la réponse. C'est une explication possible, pas une preuve.
 
-### Lors du quatrième test (recherche web activée, Haiku 5.5)
+### Lors du quatrième test (recherche web activée, Haiku 5.5 et Opus 5.5)
 
-1. **Plus facile de dialoguer avec lui.** Mon hypothèse s'est confirmée : chaque question a obtenu une réponse directe et détaillée du premier coup, avec des dates, des chiffres et des sources.
-2. **Plus facile ne veut pas dire plus fiable.** Les chiffres changeaient d'une réponse et d'une source à l'autre, et Haiku a dit lui-même n'avoir vu que des extraits et des titres.
-3. **La recherche décide de l'histoire.** Pour des événements absents de son entraînement, la réponse se construit surtout à partir des résultats de recherche (mémoire de travail). Haiku a dit que les manifestations avaient commencé à la mi-octobre ; l'article des tests précédents dit le 17 septembre.
-4. **Les sujets fréquents en ligne apparaissent d'eux-mêmes.** L'immigration est apparue dès la première réponse, avant que je pose la question, mais Haiku l'a présentée comme une affirmation contestée, sans preuve à l'appui.
-5. **Il propose toujours de chercher davantage**, et répète les mêmes faits d'une réponse à l'autre sans le dire.
+1. **Beaucoup plus facile de dialoguer avec lui.** Mon hypothèse s'est confirmée pour les deux modèles : chaque question a obtenu une réponse directe et détaillée du premier coup, avec des dates, des chiffres et des sources. Avec Opus, c'était encore plus facile qu'avec Haiku.
+2. **Plus facile ne veut pas dire plus fiable.** Les chiffres changeaient d'une réponse et d'une source à l'autre, et les deux modèles ont dit qu'ils ne pouvaient pas tout confirmer.
+3. **La recherche façonne l'histoire, mais le modèle choisit.** Pour des événements absents de son entraînement, la réponse se construit surtout à partir des résultats de recherche (mémoire de travail). Mais avec le même web, Haiku a fait commencer l'histoire à la mi-octobre, et Opus à la mi-septembre, comme l'article des tests précédents.
+4. **Les sujets fréquents en ligne peuvent apparaître d'eux-mêmes.** Haiku a parlé d'immigration avant que je pose la question ; Opus, non. Tous deux ont dit qu'aucune preuve ne l'appuyait.
+5. **Opus a mieux suivi la conversation.** Il a fait référence à sa réponse précédente et s'est corrigé, a expliqué d'où venaient ses chiffres, et a proposé de chercher davantage moins souvent que Haiku.
+6. **Tous deux ont compris pourquoi les chiffres divergent.** « Interpellation », « garde à vue » et « mise en examen » ne sont pas la même chose : ils n'ont donc pas additionné des chiffres de sources différentes.
 
 ## 8. Prochaines étapes
 
-- **Le quatrième test avec Opus 5.5 :** les mêmes questions, avec la recherche web activée.
 - **Une conclusion :** ce que ces tests m'ont appris sur les quatre notions.
 
 ### Questions ouvertes

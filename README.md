@@ -1,6 +1,6 @@
 # ai-and-current-events
 
-What does an AI model do when it is asked about events that happened **after** its training? This project tests two Claude models, Opus 5.5 and Haiku 5.5 (both with knowledge up to June 2026), with questions about the protests and riots in France in autumn 2026, with web search turned off.
+What does an AI model do when it is asked about events that happened **after** its training? This project tests two Claude models, Opus 5.5 and Haiku 5.5 (both with knowledge up to June 2026), with questions about the protests and riots in France in autumn 2026, first with web search turned off, then with web search turned on.
 
 The project is also a way of learning: I am using AI to understand AI better.
 
