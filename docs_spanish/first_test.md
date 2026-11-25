@@ -15,6 +15,8 @@
 
 Preguntas sobre las manifestaciones en Francia, hechas con la búsqueda web desactivada, para que Claude solo pueda responder con lo que aprendió durante el entrenamiento.
 
+**¿Por qué un chat de incógnito?** En un chat normal, Claude puede usar su memoria de mis otras conversaciones (si la memoria está activada en la configuración). Algunas de esas conversaciones pueden tratar sobre estas protestas, así que Claude podría «saber» cosas por ellas que no están en su entrenamiento. Un chat de incógnito no usa esa memoria (y no se guarda en el historial), así que cada prueba empieza de cero. Por eso todas las pruebas de este proyecto se hacen en chats de incógnito.
+
 ## Comprobaciones previas
 
 Todas las comprobaciones siguientes, y la propia prueba, usan el mismo modelo y la misma configuración: **Claude Opus 5.5** (`claude-opus-5-5`), esfuerzo **Medium**, en un **chat de incógnito**. Con otro modelo u otro nivel de esfuerzo, los resultados podrían ser distintos.

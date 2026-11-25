@@ -15,6 +15,8 @@
 
 Des questions sur les manifestations en France, posées avec la recherche web désactivée, afin que Claude ne puisse répondre qu'avec ce qu'il a appris pendant son entraînement.
 
+**Pourquoi une conversation privée ?** Dans une conversation normale, Claude peut utiliser sa mémoire de mes autres conversations (quand la mémoire est activée dans les paramètres). Certaines de ces conversations peuvent porter sur ces manifestations : Claude pourrait donc « savoir » grâce à elles des choses qui ne font pas partie de son entraînement. Une conversation privée n'utilise pas cette mémoire (et n'est pas enregistrée dans l'historique) : chaque test part donc de zéro. C'est pour cette raison que tous les tests de ce projet se font dans des conversations privées.
+
 ## Vérifications préalables
 
 Toutes les vérifications ci-dessous, ainsi que le test lui-même, utilisent le même modèle et les mêmes paramètres : **Claude Opus 5.5** (`claude-opus-5-5`), effort **Medium**, dans une **conversation privée**. Avec un autre modèle ou un autre niveau d'effort, les résultats pourraient être différents.

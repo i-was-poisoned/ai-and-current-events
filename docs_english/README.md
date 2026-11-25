@@ -58,9 +58,22 @@ The third test asks why Haiku gave a minister's name about four years out of dat
    → [third_test/README.md](../third_test/README.md), section *Results*.
 3. **What I found and the limits of the test**.
    → [third_test/README.md](../third_test/README.md), sections *What I found (after the test)* and *Limits of this test*.
+4. Come back here and continue with the fourth test.
+
+## 6. How to read the fourth test
+
+The fourth and last test turns web search **on** and asks questions from the earlier tests again, to see what changes when Claude can find current information itself.
+
+1. **My hypothesis and the check that web search works**.
+   → [fourth_test/README.md](../fourth_test/README.md), sections *My hypothesis (before the test)* and *Check: web search works*.
+2. **The questions**: short excerpts, each compared with the answer with web search off.
+   → [fourth_test/README.md](../fourth_test/README.md), section *Questions and answers*.
+   - → Optional: the full conversation, [fourth_test/transcript.md](../fourth_test/transcript.md).
+3. **The observations and the points to keep in mind**.
+   → [fourth_test/README.md](../fourth_test/README.md), sections *Observations* and *Important points to keep in mind*.
 4. Come back here for the summary below.
 
-## 6. What I have found so far
+## 7. What I have found so far
 
 ### From the first test (Opus 5.5)
 
@@ -90,9 +103,18 @@ The third test asks why Haiku gave a minister's name about four years out of dat
 4. **Some models are better than others.** Opus named Geffray every time, with his start date and government, and gave a complete list.
 5. **The conversation probably explains Blanquer.** In the second test, Haiku itself brought Blanquer into the conversation (the article does not mention him). What is already in the working memory can pull the answer towards it. This is a possible explanation, not a proof.
 
-## 7. What comes next
+### From the fourth test (web search on, Haiku 5.5)
 
-- **The fourth test:** questions about the same events with web search **on**, with Haiku 5.5 and Opus 5.5.
+1. **Easier to talk to.** My hypothesis was confirmed: every question got a direct, detailed answer the first time, with dates, figures and sources.
+2. **Easier is not the same as more reliable.** Figures changed between answers and sources, and Haiku said itself that it only saw snippets and headlines.
+3. **The search decides the story.** For events that are not in its training, the answer is built mostly from the search results (working memory). Haiku said the protests started in mid-October; the article from the earlier tests says September 17.
+4. **Topics that are frequent online come up on their own.** Immigration appeared in the first answer, before I asked about it, but Haiku presented it as a disputed claim with no evidence behind it.
+5. **It always offers to search more**, and repeats the same facts from one answer to the next without saying so.
+
+## 8. What comes next
+
+- **The fourth test with Opus 5.5:** the same questions, with web search on.
+- **A conclusion:** what these tests taught me about the four ideas.
 
 ### Open questions
 

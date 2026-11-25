@@ -60,11 +60,26 @@ Le troisième test cherche à comprendre pourquoi, lors du deuxième test, Haiku
    → [third_test.md](third_test.md), section *Résultats*.
 3. **Ce que j'ai découvert et les limites du test**.
    → [third_test.md](third_test.md), sections *Ce que j'ai découvert (après le test)* et *Limites de ce test*.
-4. Revenez ici pour lire le résumé ci-dessous.
+4. Revenez ici et poursuivez avec le quatrième test.
 
 Le document original, en anglais, est [third_test/README.md](../third_test/README.md).
 
-## 6. Ce que j'ai découvert jusqu'ici
+## 6. Comment lire le quatrième test
+
+Le quatrième et dernier test **active** la recherche web et repose des questions des tests précédents, pour voir ce qui change quand Claude peut trouver lui-même des informations actuelles.
+
+1. **Mon hypothèse et la vérification que la recherche web fonctionne**.
+   → [fourth_test.md](fourth_test.md), sections *Mon hypothèse (avant le test)* et *Vérification : la recherche web fonctionne*.
+2. **Les questions** : de courts extraits, chacun comparé à la réponse obtenue avec la recherche désactivée.
+   → [fourth_test.md](fourth_test.md), section *Questions et réponses*.
+   - → Facultatif : la conversation complète (en anglais), [fourth_test/transcript.md](../fourth_test/transcript.md).
+3. **Les observations et les points à garder à l'esprit**.
+   → [fourth_test.md](fourth_test.md), sections *Observations* et *Points importants à garder à l'esprit*.
+4. Revenez ici pour lire le résumé ci-dessous.
+
+Le document original, en anglais, est [fourth_test/README.md](../fourth_test/README.md).
+
+## 7. Ce que j'ai découvert jusqu'ici
 
 ### Lors du premier test (Opus 5.5)
 
@@ -94,9 +109,18 @@ Le document original, en anglais, est [third_test/README.md](../third_test/READM
 4. **Certains modèles sont meilleurs que d'autres.** Opus a cité Geffray à chaque fois, avec sa date de nomination et son gouvernement, et a donné une liste complète.
 5. **La conversation explique probablement Blanquer.** Lors du deuxième test, c'est Haiku lui-même qui a introduit Blanquer dans la conversation (l'article ne le mentionne pas). Ce qui se trouve déjà dans la mémoire de travail peut attirer la réponse. C'est une explication possible, pas une preuve.
 
-## 7. Prochaines étapes
+### Lors du quatrième test (recherche web activée, Haiku 5.5)
 
-- **Le quatrième test :** des questions sur les mêmes événements avec la recherche web **activée**, avec Haiku 5.5 et Opus 5.5.
+1. **Plus facile de dialoguer avec lui.** Mon hypothèse s'est confirmée : chaque question a obtenu une réponse directe et détaillée du premier coup, avec des dates, des chiffres et des sources.
+2. **Plus facile ne veut pas dire plus fiable.** Les chiffres changeaient d'une réponse et d'une source à l'autre, et Haiku a dit lui-même n'avoir vu que des extraits et des titres.
+3. **La recherche décide de l'histoire.** Pour des événements absents de son entraînement, la réponse se construit surtout à partir des résultats de recherche (mémoire de travail). Haiku a dit que les manifestations avaient commencé à la mi-octobre ; l'article des tests précédents dit le 17 septembre.
+4. **Les sujets fréquents en ligne apparaissent d'eux-mêmes.** L'immigration est apparue dès la première réponse, avant que je pose la question, mais Haiku l'a présentée comme une affirmation contestée, sans preuve à l'appui.
+5. **Il propose toujours de chercher davantage**, et répète les mêmes faits d'une réponse à l'autre sans le dire.
+
+## 8. Prochaines étapes
+
+- **Le quatrième test avec Opus 5.5 :** les mêmes questions, avec la recherche web activée.
+- **Une conclusion :** ce que ces tests m'ont appris sur les quatre notions.
 
 ### Questions ouvertes
 

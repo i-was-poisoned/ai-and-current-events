@@ -13,6 +13,8 @@
 
 Questions about the protests in France, asked with web search turned off, so that Claude can only answer from what it learned in training.
 
+**Why an incognito chat?** In a normal chat, Claude can use its memory of my other conversations (when memory is turned on in the settings). Some of those conversations may be about these protests, so Claude could "know" things from them that are not in its training. An incognito chat does not use that memory (and is not saved in the chat history), so each test starts clean. All the tests in this project use incognito chats for this reason.
+
 ## Checks before the test
 
 All the checks below, and the test itself, use the same model and settings: **Claude Opus 5.5** (`claude-opus-5-5`), effort **Medium**, in an **incognito chat**. Results with another model or another effort level could be different.
